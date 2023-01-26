@@ -31,6 +31,20 @@ AND last_name like '%E'
 ORDER BY hire_date DESC;
 -- 899
 -- Teiji Eldridge, Sergi Erde
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -- Q7
 SELECT first_name, last_name, birth_date, hire_date FROM employees
 WHERE hire_date like '199%'
