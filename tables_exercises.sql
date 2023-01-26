@@ -1,6 +1,5 @@
 USE employees;
 SHOW TABLES;
-SHOW CREATE DATABASE employees;
 DESCRIBE employees;
 -- 5. int, date, string, bool
 -- 6. Which table(s) do you think contain a numeric type column?

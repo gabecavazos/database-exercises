@@ -17,7 +17,7 @@ SELECT name FROM albums
 WHERE artist = 'Pink Floyd';
 -- b. 
 SELECT release_date FROM albums
-WHERE name = 'Sgt%';
+WHERE name like 'Sgt%';
 -- c. 
 SELECT genre FROM albums
 WHERE name = 'Nevermind';
