@@ -83,6 +83,7 @@ JOIN departments AS d
 	ON d.dept_no=de.dept_no
 WHERE d.dept_name LIKE 'Customer Service'
 AND de.to_date LIKE '9999%'
+AND t.to_date > now()
 GROUP BY Title
 ORDER BY Title;
 
@@ -133,7 +134,8 @@ FROM (
   WHERE s.to_date like '9999%'
   GROUP BY dept_name
 ) AS subquery 
-GROUP BY dept_name;
+GROUP BY dept_name
+ORDER BY MAX(average_salary) DESC LIMIT 1;
 
 -- second try
 SELECT dept_name, AVG(average_salary)
